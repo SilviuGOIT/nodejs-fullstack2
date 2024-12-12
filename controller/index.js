@@ -13,7 +13,7 @@ const secret = process.env.SECRET;
 const getUsersController = async (req, res, next) => {
   try {
     const results = await getAllUsers();
-    res.status({
+    res.status(200).json({
       status: "Success",
       code: 200,
       data: results,

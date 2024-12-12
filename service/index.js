@@ -3,11 +3,11 @@ const User = require("./schemas/UserSchemas");
 const Tutor = require("./schemas/TutorsSchema");
 
 const getAllUsers = async () => {
-  await User.find();
+  return await User.find();
 };
 
 const getAllTutors = async () => {
-  await Tutor.find();
+  return await Tutor.find();
 };
 
 const createUser = async ({ email, password }) => {
